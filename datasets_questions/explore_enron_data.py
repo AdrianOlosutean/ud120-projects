@@ -19,4 +19,8 @@ import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
 
+pois = [val for _,val in enron_data.iteritems() if val['poi'] is True]
 
+print len([val['total_payments'] for _,val in enron_data.iteritems() if val['total_payments'] == 'NaN'])
+
+# print enron_data["PRENTICE JAMES"]["stock"]

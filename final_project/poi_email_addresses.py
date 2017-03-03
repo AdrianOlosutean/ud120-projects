@@ -91,4 +91,6 @@ def poiEmails():
             "cloehr@enron.com", 
             "chris.loehr@enron.com"
         ]
-    return email_list
+    return len(email_list)
+
+print poiEmails()
